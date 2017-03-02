@@ -1,7 +1,7 @@
 package com.duke.main;
 
 @SuppressWarnings("rawtypes")
-public class Quitck {
+public class Quick {
 
 	public static void sort(Comparable[] a) {
 		sort(a, 0, a.length - 1);
