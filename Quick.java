@@ -24,7 +24,7 @@ public class Quitck {
 					break;
 				}
 			}
-			while (less(v, a[--i])) {
+			while (less(v, a[--j])) {
 				if (j == lo) {
 					break;
 				}
