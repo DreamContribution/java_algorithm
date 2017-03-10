@@ -24,8 +24,6 @@ public class Merge {
 			aux[k] = a[k];
 		}
 
-		System.out.println(String.format("i:%d,j:%d,hi:%d,distance:%d", i, j,
-				hi, (hi - i)));
 		for (int k = lo; k <= hi; k++) {
 			if (i > mid) {
 				a[k] = aux[j++];
@@ -35,22 +33,12 @@ public class Merge {
 				a[k] = aux[j++];
 			} else {
 				a[k] = aux[i++];
-			}
-			System.out.println(String.format("k:%d,i:%d,j:%d", k, i, j));
+			}	
 		}
-		print(aux);
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static boolean less(Comparable v, Comparable w) {
 		return v.compareTo(w) < 0;
-	}
-
-	@SuppressWarnings("rawtypes")
-	public static void print(Comparable[] target) {
-		for (Comparable<?> comparable : aux) {
-			System.out.print(comparable + ",");
-		}
-		System.out.println("\n");
 	}
 }
